@@ -8,7 +8,7 @@ before_action :get_current_user, only: [:index, :show]
 
   
     def show
-     @attraction = Attraction.find(params[:id])
+    
      end
 
      def new
