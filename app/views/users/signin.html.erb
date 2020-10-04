@@ -1,0 +1,10 @@
+<%=form_tag signin_path do |f|%>
+  <h3><u>Sign In</u></h3>
+  <label>Your name</label>
+  <%= select_tag(:user_name, options_for_select(User.all.collect {|p| [ p.name, p.id ] }) ) %><br>
+  <label>Password</label>
+  <%= password_field_tag :password %>
+  <%= submit_tag 'Sign In'%>
+<%end%>
+
+<%= link_to 'Home', root_path %>
