@@ -31,7 +31,7 @@ RSpec.describe User, :type => :model do
       :nausea_rating => 2,
       :happiness_rating => 4,
       :min_height => 32
-    )
+    ) 
   }
 
   let(:ferris_wheel) {
